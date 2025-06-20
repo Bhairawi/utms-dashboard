@@ -1,0 +1,136 @@
+/* Reset and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Main container */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 200px;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .sidebar li:hover {
+    color: #00adb5;
+  }
+  
+  /* Main content layout */
+  .main-content {
+    margin-left: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #00adb5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  /* Dashboard card layout */
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Footer layout */
+  .footer {
+    background: #003366; /* New dark blue background */
+    color: #fff;
+    padding: 30px 20px 10px;
+    font-size: 14px;
+    margin-top: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff30;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #00adb5;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  /* Footer link styles */
+.footer a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
